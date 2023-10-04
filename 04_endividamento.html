@@ -7,10 +7,17 @@
     */
 
     //ENTRADA
+    let investimento=10000;
+    let meses=0; 
 
+
+    for (let novoValor = investimento; novoValor >= 0; meses++) {
+        novoValor-=300
+        novoValor+=investimento*0.03
+    }
     
     //PROCESSAMENTO
-    
+    document.write(`ira demorar ${meses} meses para gastar todo o valor investido`)
     
     //SAÍDA
     
