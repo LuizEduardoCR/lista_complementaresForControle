@@ -8,12 +8,24 @@
     */
 
     //ENTRADA
+    let listaDeNumeros = [4, 8, 12, 35, 78, 83, 5, 22, 49, 95];
+    let maior50=[];
+    let menor50=[];
 
-    
+
     //PROCESSAMENTO
+    for (let verifica = 0; verifica < listaDeNumeros.length; verifica++) {
+        if (listaDeNumeros[verifica]>50) {
+            maior50.push(listaDeNumeros[verifica]);
+        }
+        else if(listaDeNumeros[verifica]<=50){
+            menor50.push(listaDeNumeros[verifica]);
+        }
+    }
+        
+    //SAÍDA   
+    document.write(`os numeros maiores que 50 são ${maior50} <br> os numeros menores que 50 são ${menor50}<br>`)
+    document.write(`os numeros maiores que 50 representam um percentual de ${maior50.length*100/listaDeNumeros.length}%<br>`)
     
-    
-    //SAÍDA
-    
-
+    document.write(`os numeros menores que 50 representam um percentual de ${menor50.length*100/listaDeNumeros.length}%`)
 </script>
